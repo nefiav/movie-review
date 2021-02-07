@@ -1,0 +1,150 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #EEEEEE;
+  padding-bottom:60px;
+}
+
+a {
+  color: black;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #959393;
+}
+a:active {
+  color: #75c7b5;
+}
+
+/* Start of Menu  */
+.menu-container {
+  width: 100%;
+  color: #fff;
+  background-color: #75c7b5;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro {
+  font-size: 20px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Start of Home container */
+
+.home-container, .contact-container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.home-item, .contact-item {
+  color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured, .pick, .contact, .introduce, .pic {
+  font-size: 15px;
+  background-color: white;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Start of Contact Container */
+
+
+.card-title {
+  font-family: Quicksand, Arial, Helvetica, sans-serif;
+  font-size: 36px;
+}
+
+/* Start of Footer  */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #75c7b5;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-item {
+  padding: 20px;
+}
+
+
+
+/* Media Queries */
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: #F09A9D; /* Red */
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: #F5CF8E; /* Yellow */
+  }
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+
+    .home-container, {
+      height: 500px;
+    }
+    .contact-container {
+      height: 100%;
+    }
+
+    .home-item {
+      width: 1000px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .contact-item {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .featured, .pick, .contact {
+      width: 300px;
+    }
+
+    .introduce, .pic {
+      padding: 10px;
+      width: 300px;
+      height: 100%;
+    }
+
+  }
